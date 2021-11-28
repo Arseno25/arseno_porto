@@ -20,8 +20,7 @@
   <script type="text/javascript" src="./js/vanilla-tilt.min.js"></script>
 
   <!-- Typed.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css" />
 
@@ -60,7 +59,7 @@
   <section class="jumbotron text-center">
     <img src="img/pp.png" alt="Arseno" width="150" class="rounded-circle img-thumbnail" />
     <h1 class="display-4">Arseno Kalam Jati</h1>
-    <p class="lead">I'm <span id="saya"></span></p>
+    <p class="lead fw-bold">I'm a <span id="saya" class="text-white fw-bold" ></span></p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#e2edff"fill-opacity="1"
         d="M0,192L40,181.3C80,171,160,149,240,165.3C320,181,400,235,480,224C560,213,640,139,720,101.3C800,64,880,64,960,101.3C1040,139,1120,213,1200,218.7C1280,224,1360,160,1400,128L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
@@ -275,13 +274,15 @@
 
 <script>
 
-  var typed = new Typed('#saya', {
-    strings: ['Student', ' Cheat Developer', 'Web developer'],
-    smartBackspace: true,
+  new Typed('#saya', {
+   strings: ["Student \n", 
+   "Cheat Developer \n", 
+   "Web Developer \n"],
     showCursor: false,
-    typeSpeed : 40,
+    typeSpeed : 80,
     delaySpeed : 90,
-    loop : true
+    backSpeed: 40,
+    loop: true
     
   });
   
